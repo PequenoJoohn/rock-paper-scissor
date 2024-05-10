@@ -49,8 +49,15 @@ const restart = document.querySelector("#restart");
 const restartMobile = document.querySelector(".battle-mobile #restart");
 const score = document.querySelector("#score");
 
-score.textContent = parseInt(localStorage.getItem("score"));
-player.score = parseInt(localStorage.getItem("score"));
+const storageScore = localStorage.getItem("score");
+score.textContent =
+  storageScore === null
+    ? player.score
+    : parseInt(localStorage.getItem("score"));
+player.score =
+  storageScore === null
+    ? player.score
+    : parseInt(localStorage.getItem("score"));
 
 const styleSheet = document.createElement("style");
 document.head.appendChild(styleSheet);
