@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="panel-score">
+            <ul>
+                <li>rock</li>
+                <li>paper</li>
+                <li>scissors</li>
+            </ul>
+
+            <div>
+                <p id="title">score</p>
+                <p id="score">0</p>
+            </div>
+        </div>
+
+        <div class="panel-game">
+            <ul class="buttons">
+                <li>
+                    <button class="button border-paper winner" id="paper">
+                        <img src="images/icon-paper.svg" alt="">
+                    </button>
+                </li>
+                <li>
+                    <button class="button border-scissors" id="scissors">
+                        <img src="images/icon-scissors.svg" alt="">
+                    </button>
+                </li>
+                <li>
+
+                    <button class="button border-rock" id="rock">
+                        <img src="images/icon-rock.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+
+            <ul class="battle">
+                <li>
+                    <p>you picked</p>
+                </li>
+
+                <li>
+                    <p id="winner"></p>
+                    <button id="restart">play again</button>
+                </li>
+
+                <li>
+                    <p>the house picked </p>
+                </li>
+            </ul>
+
+            <ul class="battle-mobile">
+                <li>
+                    <p id="winner"></p>
+                    <button id="restart">play again</button>
+                </li>
+            </ul>
+
+        </div>
+
+    </main>
+
+    <script src="gameLogic.js"></script>
+</body>
+
+</html>
